@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AnimationOpenGL", "AnimationOpenGL.vcxproj", "{6D1931D7-6F22-46B3-868D-A8B3A9D317B1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AnimationOpenGLTests", "..\AnimationOpenGLTests\AnimationOpenGLTests.vcxproj", "{20ACB28C-99E7-48C3-985B-90E986BC2BED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{6D1931D7-6F22-46B3-868D-A8B3A9D317B1}.Release|x64.Build.0 = Release|x64
 		{6D1931D7-6F22-46B3-868D-A8B3A9D317B1}.Release|x86.ActiveCfg = Release|Win32
 		{6D1931D7-6F22-46B3-868D-A8B3A9D317B1}.Release|x86.Build.0 = Release|Win32
+		{20ACB28C-99E7-48C3-985B-90E986BC2BED}.Debug|x64.ActiveCfg = Debug|x64
+		{20ACB28C-99E7-48C3-985B-90E986BC2BED}.Debug|x64.Build.0 = Debug|x64
+		{20ACB28C-99E7-48C3-985B-90E986BC2BED}.Debug|x86.ActiveCfg = Debug|Win32
+		{20ACB28C-99E7-48C3-985B-90E986BC2BED}.Debug|x86.Build.0 = Debug|Win32
+		{20ACB28C-99E7-48C3-985B-90E986BC2BED}.Release|x64.ActiveCfg = Release|x64
+		{20ACB28C-99E7-48C3-985B-90E986BC2BED}.Release|x64.Build.0 = Release|x64
+		{20ACB28C-99E7-48C3-985B-90E986BC2BED}.Release|x86.ActiveCfg = Release|Win32
+		{20ACB28C-99E7-48C3-985B-90E986BC2BED}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

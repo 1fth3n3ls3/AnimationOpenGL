@@ -2,12 +2,9 @@
 #define _H_VEC3_
 #define VEC3_EPSILON 0.000001f
 
-struct vec3
-{
-	union
-	{
-		struct
-		{
+struct vec3 {
+	union {
+		struct {
 			float x;
 			float y;
 			float z;
@@ -21,5 +18,11 @@ struct vec3
 		x(fv[0]), y(fv[1]), z(fv[2]) {}
 
 };
+
+vec3 operator+ (const vec3& l, const vec3& r);
+vec3 operator- (const vec3& l, const vec3& r);
+vec3 operator* (const vec3& l, float a);
+vec3 operator* (const vec3& l, const vec3& r);
+float dot (const vec3& l, const vec3& r);
 
 #endif 

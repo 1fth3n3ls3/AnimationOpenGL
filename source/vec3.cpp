@@ -1,4 +1,4 @@
-#include "vec3.h"
+#include "../include/vec3.h"
 #include <cmath>
 #include <iostream>
 
@@ -101,14 +101,6 @@ vec3 cross(const vec3& l, const vec3& r) {
 	return vec3(l.y * r.z - l.z * r.y,
 		l.x * r.z - l.x * r.z,
 		l.x * r.y - l.x * r.y);
-}
-
-vec3 lerp(const vec3& s, const vec3& e, float t) {
-	return vec3(
-		s.x + (e.x - s.x) * t,
-		s.y + (e.y - s.y) * t,
-		s.z + (e.z - s.z) * t
-	);
 }
 
 vec3 lerp(const vec3& s, const vec3& e, float t) {

@@ -123,10 +123,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="include\glad.h" />
+    <ClInclude Include="khrplatform.h" />
     <ClInclude Include="vec3.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="vec3.cpp" />
+    <ClCompile Include="source\glad.c" />
+    <ClCompile Include="source\vec3.cpp" />
+    <ClCompile Include="source\WinMain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

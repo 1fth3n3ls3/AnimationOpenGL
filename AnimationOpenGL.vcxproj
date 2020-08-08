@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -124,14 +124,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
+    <ClInclude Include="Attribute.h" />
+    <ClInclude Include="Draw.h" />
     <ClInclude Include="include\glad.h" />
+    <ClInclude Include="include\stb_image.h" />
+    <ClInclude Include="IndexBuffer.h" />
     <ClInclude Include="khrplatform.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="Uniform.h" />
     <ClInclude Include="vec3.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Attribute.cpp" />
+    <ClCompile Include="Draw.cpp" />
+    <ClCompile Include="IndexBuffer.cpp" />
+    <ClCompile Include="Shader.cpp" />
     <ClCompile Include="source\glad.c" />
+    <ClCompile Include="source\stb_image.cpp" />
     <ClCompile Include="source\vec3.cpp" />
     <ClCompile Include="source\WinMain.cpp" />
+    <ClCompile Include="Uniform.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

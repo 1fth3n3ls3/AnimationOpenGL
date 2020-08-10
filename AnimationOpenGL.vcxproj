@@ -127,7 +127,10 @@
     <ClInclude Include="Attribute.h" />
     <ClInclude Include="Draw.h" />
     <ClInclude Include="include\glad.h" />
+    <ClInclude Include="include\mat4.h" />
     <ClInclude Include="include\stb_image.h" />
+    <ClInclude Include="include\vec2.h" />
+    <ClInclude Include="include\vec4.h" />
     <ClInclude Include="IndexBuffer.h" />
     <ClInclude Include="khrplatform.h" />
     <ClInclude Include="Shader.h" />
@@ -140,6 +143,7 @@
     <ClCompile Include="IndexBuffer.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="source\glad.c" />
+    <ClCompile Include="source\mat4.cpp" />
     <ClCompile Include="source\stb_image.cpp" />
     <ClCompile Include="source\vec3.cpp" />
     <ClCompile Include="source\WinMain.cpp" />

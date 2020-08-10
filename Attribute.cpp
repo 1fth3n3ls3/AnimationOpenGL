@@ -1,16 +1,16 @@
 #include "Attribute.h"
 #include "./include/glad.h"
-//#include "vec2.h"
+#include "./include/vec2.h"
 #include "./include/vec3.h"
-//#include "vec4.h"
+#include "./include/vec4.h"
 //#include "quat.h"
 
 template Attribute<int>;
 template Attribute<float>;
-//template Attribute<vec2>;
+template Attribute<vec2>;
 template Attribute<vec3>;
-//template Attribute<vec4>;
-//template Attribute<ivec4>;
+template Attribute<vec4>;
+template Attribute<ivec4>;
 //template Attribute<quat>;
 
 template<typename T>
@@ -54,15 +54,15 @@ void Attribute<int>::SetAttribPointer(unsigned int slot) {
 	glVertexAttribIPointer(slot, 1, GL_INT, 0, (void*)0);
 }
 
-//template<>
-//void Attribute<ivec4>::SetAttribPointer(unsigned int slot) {
-//	glVertexAttribIPointer(slot, 4, GL_INT, 0, (void*)0);
-//}
-//
-//template<>
-//void Attribute<vec2>::SetAttribPointer(unsigned int slot) {
-//	glVertexAttribPointer(slot, 4, GL_FLOAT, GL_FALSE, 0, (void*)0);
-//}
+template<>
+void Attribute<ivec4>::SetAttribPointer(unsigned int slot) {
+	glVertexAttribIPointer(slot, 4, GL_INT, 0, (void*)0);
+}
+
+template<>
+void Attribute<vec2>::SetAttribPointer(unsigned int slot) {
+	glVertexAttribPointer(slot, 4, GL_FLOAT, GL_FALSE, 0, (void*)0);
+}
 
 template<>
 void Attribute<float>::SetAttribPointer(unsigned int slot) {
@@ -76,12 +76,12 @@ void Attribute<vec3>::SetAttribPointer(unsigned int slot) {
 }
 
 
-//template<>
-//void Attribute<vec4>::SetAttribPointer(unsigned int slot) {
-//	glVertexAttribPointer(slot, 4, GL_FLOAT, GL_FALSE, 0, (void*)0);
-//
-//}
-//
+template<>
+void Attribute<vec4>::SetAttribPointer(unsigned int slot) {
+	glVertexAttribPointer(slot, 4, GL_FLOAT, GL_FALSE, 0, (void*)0);
+
+}
+
 //template<>
 //void Attribute<quat>::SetAttribPointer(unsigned int slot) {
 //	glVertexAttribPointer(slot, 4, GL_FLOAT, GL_FALSE, 0, (void*)0);

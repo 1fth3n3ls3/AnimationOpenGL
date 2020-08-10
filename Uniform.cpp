@@ -1,17 +1,17 @@
 #include "Uniform.h"
 #include "./include/glad.h"
-//#include "vec2.h"
+#include "./include/vec2.h"
 #include "./include/vec3.h"
-//#include "vec4.h"
+#include "./include/vec4.h"
 //#include "quat.h"
 //#include "mat4.h"
 
 template Uniform<int>;
 template Uniform<float>;
-//template Attribute<vec2>;
+template Uniform<vec2>;
 template Uniform<vec3>;
-//template Attribute<vec4>;
-//template Attribute<ivec4>;
+template Uniform<vec4>;
+template Uniform<ivec4>;
 //template Attribute<quat>;
 //template Attribute<mat4>;
 
@@ -23,12 +23,12 @@ void Uniform<tType>::Set(unsigned int slot, tType* data, unsigned int length) { 
 }
 
 UNIFORM_IMPL(glUniform1iv, int, int)
-//UNIFORM_IMPL(glUniform4iv, ivec4, int)
-//UNIFORM_IMPL(glUniform2iv, ivec2, int)
+UNIFORM_IMPL(glUniform4iv, ivec4, int)
+UNIFORM_IMPL(glUniform2iv, ivec2, int)
 UNIFORM_IMPL(glUniform1fv, float, float)
-//UNIFORM_IMPL(glUniform2fv, vec2, float)
+UNIFORM_IMPL(glUniform2fv, vec2, float)
 UNIFORM_IMPL(glUniform3fv, vec3, float)
-//UNIFORM_IMPL(glUniform4fv, vec4, float)
+UNIFORM_IMPL(glUniform4fv, vec4, float)
 //UNIFORM_IMPL(glUniform4fv, quat, float)
 
 //template<>

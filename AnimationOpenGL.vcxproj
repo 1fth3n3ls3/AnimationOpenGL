@@ -126,7 +126,9 @@
     <ClInclude Include="Application.h" />
     <ClInclude Include="Attribute.h" />
     <ClInclude Include="Draw.h" />
+    <ClInclude Include="include\cgltf.h" />
     <ClInclude Include="include\glad.h" />
+    <ClInclude Include="include\GLTFLoader.h" />
     <ClInclude Include="include\mat4.h" />
     <ClInclude Include="include\quat.h" />
     <ClInclude Include="include\stb_image.h" />
@@ -144,7 +146,9 @@
     <ClCompile Include="Draw.cpp" />
     <ClCompile Include="IndexBuffer.cpp" />
     <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="source\cgltf.c" />
     <ClCompile Include="source\glad.c" />
+    <ClCompile Include="source\GLTFLoader.cpp" />
     <ClCompile Include="source\mat4.cpp" />
     <ClCompile Include="source\quat.cpp" />
     <ClCompile Include="source\stb_image.cpp" />
